@@ -67,3 +67,7 @@ export const generatePagination = (currentPage: number, totalPages: number) => {
     totalPages,
   ];
 };
+
+export const generateRandomInteger = (min: number, max: number) => {
+  return Math.floor(Math.random() * (max - min)) + min;
+}
